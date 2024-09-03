@@ -13,6 +13,7 @@ function ThemeWatcher() {
       let systemTheme = media.matches ? 'dark' : 'light'
       if (resolvedTheme === systemTheme) {
         setTheme('light')
+        // setTheme('system')
       }
     }
 
