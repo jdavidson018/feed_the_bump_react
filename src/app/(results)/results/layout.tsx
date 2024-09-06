@@ -1,10 +1,8 @@
 import { type Metadata } from 'next'
 import glob from 'fast-glob'
-
 import { Providers } from '@/app/(results)/results/providers'
 import { Layout } from '@/components/Layout'
 import { type Section } from '@/components/SectionProvider'
-
 import '@/styles/tailwind.css'
 
 export const metadata: Metadata = {
@@ -20,13 +18,20 @@ export default async function RootLayout({
   children: React.ReactNode
 }) {
   let pages = await glob('**/*.mdx', { cwd: 'src/app/(results)/results' })
-  let allSectionsEntries = (await Promise.all(
-    pages.map(async (filename) => [
-      '/' + filename.replace(/(^|\/)page\.mdx$/, ''),
-      (await import(`./${filename}`)).sections,
-    ]),
-  )) as Array<[string, Array<Section>]>
+  console.log('Found MDX files:', pages)
+
+  let allSectionsEntries = await Promise.all(
+    pages.map(async (filename) => {
+      const path = '/results/' + filename.replace(/(^|\/)page\.mdx$/, '')
+      const module = await import(`./${filename}`)
+      console.log(`Sections for ${path}:`, module.sections)
+      return [path, module.sections]
+    })
+  ) as Array<[string, Array<Section>]>
+
   let allSections = Object.fromEntries(allSectionsEntries)
+
+  console.log('All sections structure:', JSON.stringify(allSections, null, 2))
 
   return (
     <html lang="en" className="h-full" suppressHydrationWarning>
