@@ -1,10 +1,18 @@
-# Protocol
+# Feed the Bump
 
-Protocol is a [Tailwind UI](https://tailwindui.com) site template built using [Tailwind CSS](https://tailwindcss.com) and [Next.js](https://nextjs.org).
+Welcome to Feed the Bump – your trusted companion for navigating the complex world of prenatal nutrition!
+
+Feed the Bump is an innovative, user-friendly website designed to empower expectant mothers with crucial health information related to their diet during pregnancy. Our cutting-edge platform simplifies the often overwhelming task of choosing the right foods for both mother and baby.
+
+At the heart of our service is a powerful, intuitive food lookup feature. With just a few clicks, users can instantly access the health status of specific foods, categorized as beneficial, neutral, or best avoided during pregnancy. This real-time, evidence-based information helps mothers-to-be make informed decisions about their diet, ensuring optimal nutrition for themselves and their developing babies.
+
+Whether you're a first-time mom or adding to your family, Feed the Bump is your go-to resource for clear, reliable, and easy-to-understand prenatal dietary guidance.
+
+Visit our website: [https://www.feedthebump.com](https://www.feedthebump.com) (placeholder URL)
 
 ## Getting started
 
-To get started with this template, first install the npm dependencies:
+To get started with this project, first install the npm dependencies:
 
 ```bash
 npm install
@@ -17,30 +25,3 @@ npm run dev
 ```
 
 Finally, open [http://localhost:3000](http://localhost:3000) in your browser to view the website.
-
-## Customizing
-
-You can start editing this template by modifying the files in the `/src` folder. The site will auto-update as you edit these files.
-
-## Global search
-
-This template includes a global search that's powered by the [FlexSearch](https://github.com/nextapps-de/flexsearch) library. It's available by clicking the search input or by using the `⌘K` shortcut.
-
-This feature requires no configuration, and works out of the box by automatically scanning your documentation pages to build its index. You can adjust the search parameters by editing the `/src/mdx/search.mjs` file.
-
-## License
-
-This site template is a commercial product and is licensed under the [Tailwind UI license](https://tailwindui.com/license).
-
-## Learn more
-
-To learn more about the technologies used in this site template, see the following resources:
-
-- [Tailwind CSS](https://tailwindcss.com/docs) - the official Tailwind CSS documentation
-- [Next.js](https://nextjs.org/docs) - the official Next.js documentation
-- [Headless UI](https://headlessui.dev) - the official Headless UI documentation
-- [Framer Motion](https://www.framer.com/docs/) - the official Framer Motion documentation
-- [MDX](https://mdxjs.com/) - the official MDX documentation
-- [Algolia Autocomplete](https://www.algolia.com/doc/ui-libraries/autocomplete/introduction/what-is-autocomplete/) - the official Algolia Autocomplete documentation
-- [FlexSearch](https://github.com/nextapps-de/flexsearch) - the official FlexSearch documentation
-- [Zustand](https://docs.pmnd.rs/zustand/getting-started/introduction) - the official Zustand documentation

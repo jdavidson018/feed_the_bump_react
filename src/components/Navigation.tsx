@@ -231,26 +231,16 @@ function NavigationGroup({
 
 export const navigation: Array<NavGroup> = [
   {
-    title: 'Guides',
+    title: 'Nutrition',
     links: [
-      { title: 'Introduction', href: '/results' },
-      { title: 'Quickstart', href: '/results/quickstart' },
-      { title: 'SDKs', href: '/results/sdks' },
-      { title: 'Authentication', href: '/results/authentication' },
-      { title: 'Pagination', href: '/results/pagination' },
-      { title: 'Errors', href: '/results/errors' },
-      { title: 'Webhooks', href: '/results/webhooks' },
+      { title: 'Guide', href: '/results/nutrition-guide' },
+      { title: 'Recipes', href: '/results/recipes' },
+      { title: 'Food Database', href: '/results/database' },
     ],
   },
   {
-    title: 'Resources',
-    links: [
-      { title: 'Contacts', href: '/results/contacts' },
-      { title: 'Conversations', href: '/results/conversations' },
-      { title: 'Messages', href: '/results/messages' },
-      { title: 'Groups', href: '/results/groups' },
-      { title: 'Attachments', href: '/results/attachments' },
-    ],
+    title: 'About Us',
+    links: [{ title: 'Who We Are', href: '/results/about' }],
   },
 ]
 
